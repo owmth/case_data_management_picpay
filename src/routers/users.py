@@ -12,10 +12,7 @@ def read_users(db: Session = Depends(get_db)):
 
 @router.get("/{id}", response_model=UserResponse)
 def read_user(id: int, db: Session = Depends(get_db)):
-    user = get_user(db, id)
-    if not user:
-        raise HTTPException(status_code=404, detail="Usuário não encontrado")
-    return user
+    return get_user(db, id)
 
 @router.post("/", response_model=UserResponse)
 def create_new_user(user: UserCreate, db: Session = Depends(get_db)):
