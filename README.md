@@ -38,18 +38,17 @@ Este projeto é uma API CRUD para gerenciamento de usuários, desenvolvida utili
 ## 🔧 Configuração e Execução
 ### 1️⃣ Clonar o Repositório
 ```sh
-git clone https://github.com/seuusuario/seurepositorio.git
-cd seurepositorio
+git clone https://github.com/owmth/case_data_management_picpay
+cd case_data_management_picpay
 ```
 ### 2️⃣ Criar e Ativar um Ambiente Virtual (Opcional)
 ```sh
 python -m venv venv
-source venv/bin/activate  # Linux/Mac
-venv\Scripts\activate     # Windows
+venv\Scripts\activate
 ```
 ### 3️⃣ Instalar Dependências
 ```sh
-pip install -r requirements.txt
+pip install -r requirements/base.txt
 ```
 ### 4️⃣ Executar a Aplicação
 ```sh
