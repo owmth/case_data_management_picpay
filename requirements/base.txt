@@ -3,3 +3,5 @@ uvicorn
 sqlalchemy
 pydantic[email]
 pydantic-settings
+
+#pip freeze para pegar as versões
