@@ -6,18 +6,27 @@ Este projeto é uma API CRUD para gerenciamento de usuários, desenvolvida utili
 ## 📂 Estrutura do Projeto
 ```
 ├── src/
-│   ├── main.py            # Inicializa a API FastAPI
-│   ├── models/            # Modelos de banco de dados
-│   ├── schemas/           # Schemas Pydantic para validacao
-│   ├── services/          # Logica de negocio (CRUD)
-│   ├── routes/            # Endpoints da API
-│   ├── database/          # Configuração do banco SQLite
-├── tests/                 # Testes automatizados
-├── Dockerfile             # Configuração para rodar no Docker
-├── docker-compose.yml     # Configuração do ambiente
-├── requirements.txt       # Dependências gerais do projeto
-├── requirements/          # Diretório para requisitos específicos
-│   ├── base.txt           # Dependências essenciais do projeto
+│   ├── application/
+│   │   ├── gateways/       # Configuração de conexão com o banco
+│   │   ├── models/         # Modelos do banco de dados (SQLAlchemy)
+│   │   ├── routers/        # Rotas/endpoints da API
+│   │   ├── schemas/        # Schemas Pydantic para validação
+│   │   ├── services/       # Lógica de negócio (CRUD)
+│   │   ├── config/         # Configurações gerais
+│   │   ├── __init__.py
+│   ├── main.py             # Inicializa a API FastAPI
+│   ├── users.db            # Banco de dados SQLite
+├── tests/                  # Testes automatizados
+│   ├── test_users.py       # Testes dos endpoints de usuários
+│   ├── conftest.py         # Configuração de testes
+├── requirements/           # Diretório para requisitos específicos
+│   ├── base.txt            # Dependências essenciais do projeto
+│   ├── dev.txt             # Dependências para desenvolvimento
+├── .gitignore              # Arquivos ignorados pelo Git
+├── pytest.ini              # Configuração do pytest
+├── Dockerfile              # Configuração para rodar no Docker
+├── docker-compose.yml      # Configuração do ambiente Docker
+├── README.md               # Documentação do projeto
 ```
 
 ## 🛠 Tecnologias Utilizadas
