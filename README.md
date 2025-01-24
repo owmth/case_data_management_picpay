@@ -67,7 +67,7 @@ http://localhost:8000/docs
 ```
 ### 3️⃣ Rodar os Testes dentro do Container
 ```sh
-docker-compose exec app pytest tests/
+docker-compose exec app python -m pytest tests/
 ```
 
 ## ✅ Testes Automatizados
@@ -75,7 +75,7 @@ Os testes garantem a qualidade da API e validam os endpoints.
 
 ### 🔹 Executar os Testes Manualmente
 ```sh
-pytest tests/
+python -m pytest tests/
 ```
 
 ## 🎯 Conclusão
