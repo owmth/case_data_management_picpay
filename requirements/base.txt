@@ -1,7 +1,5 @@
-fastapi
-uvicorn
-sqlalchemy
-pydantic[email]
-pydantic-settings
-
-#pip freeze para pegar as versões
+fastapi==0.115.7
+uvicorn==0.34.0
+SQLAlchemy==2.0.37
+pydantic[email]==2.10.5
+pydantic-settings==2.7.1

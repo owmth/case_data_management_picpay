@@ -1,2 +1,2 @@
 -r base.txt
-pytest
+pytest==8.3.4
