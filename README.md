@@ -55,7 +55,7 @@ cd case_data_management_picpay
 
 ### 2️⃣ Construir e Subir o Container
 ```sh
-docker-compose up --build
+docker-compose up --build -d
 ```
 
 ### 3️⃣ Acessar a API
@@ -64,9 +64,9 @@ A API estará disponível no navegador em:
 http://localhost:8000/docs
 ```
 
-### 4️⃣ Rodar os Testes dentro do Container
+### 4️⃣ Rodar os Testes 
 ```sh
-docker-compose exec app pytest tests/
+python -m pytest tests/
 ```
 
 ## 🎯 Conclusão
